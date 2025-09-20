@@ -1,0 +1,11 @@
+.btn-pink {
+  background-color: #ff69b4 !important; /* force override */
+  color: #fff !important;
+  border: none !important;
+}
+
+.btn-pink:hover,
+.btn-pink:focus {
+  background-color: #ff1493 !important;
+  color: #fff !important;
+}
