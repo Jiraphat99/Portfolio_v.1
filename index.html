@@ -54,7 +54,7 @@
     />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg bg-white shadow-sm sticky-top"
@@ -124,74 +124,69 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="container py-5">
-      <div class="text-center mb-5">
-        <h1>⭐ My Projects</h1>
+    <main class="container py-5">
+      <header class="text-center mb-5">
+        <h1 class="fw-bold">⭐ My Projects</h1>
         <p class="text-muted">
-          A selection of my front-end development work 🌸
+          A selection of my front-end development work 🌸 built with modern web
+          technologies.
         </p>
-      </div>
+      </header>
 
-      <div class="row g-4 justify-content-center">
-        <!-- Project Card 1 -->
-        <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
-          <div class="card h-100 shadow-sm" style="max-width: 320px">
-            <img
-              src="/images/weather.png"
-              class="card-img-top img-fluid"
-              alt="Weather App Project"
-            />
-            <div class="card-body">
-              <h5 class="card-title">☀️ Weather App</h5>
-              <p class="card-text">
-                A responsive weather application built with HTML, CSS, and
-                Bootstrap.
-              </p>
-            </div>
-            <div class="card-footer text-center bg-white border-0 pb-3">
-              <a
-                href="#"
-                class="btn btn-pink btn-sm"
-                aria-label="View Weather App Project"
-                >View Project</a
-              >
-            </div>
-          </div>
+      <!-- Project 1: Weather App -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img
+            src="/images/weatherapp.png"
+            class="img-fluid rounded shadow-sm"
+            alt="Weather App preview"
+          />
         </div>
-
-        <!-- Project Card 2 -->
-        <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
-          <div class="card h-100 shadow-sm" style="max-width: 320px">
-            <img
-              src="/images/yoga.png"
-              class="card-img-top img-fluid"
-              alt="Yoga App Project"
-            />
-            <div class="card-body">
-              <h5 class="card-title">🧘 Yoga Website</h5>
-              <p class="card-text">
-                A dynamic front-end project using JavaScript and Bootstrap
-                components.
-              </p>
-            </div>
-            <div class="card-footer text-center bg-white border-0 pb-3">
-              <a
-                href="#"
-                class="btn btn-pink btn-sm"
-                aria-label="View Yoga Website Project"
-                >View Project</a
-              >
-            </div>
+        <div class="col-md-6">
+          <h2 class="mb-3">☀️ Weather App</h2>
+          <p>
+            A responsive weather application built with HTML, CSS, and
+            Bootstrap, providing real-time weather updates.
+          </p>
+          <div class="mt-4">
+            <a href="#" class="btn btn-pink">✨ Launch Weather App</a>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- Project 2: Thai Poem Generator (swapped) -->
+      <div class="row align-items-center mb-5 flex-md-row-reverse">
+        <div class="col-md-6">
+          <img
+            src="/images/thai_poem_generator.png"
+            class="img-fluid rounded shadow-sm"
+            alt="Thai Poem Generator preview"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-3">📜 Thai Poem Generator</h2>
+          <p>
+            An interactive web app that generates traditional Thai poems using
+            JavaScript and modern styling.
+          </p>
+          <div class="mt-4">
+            <a href="#" class="btn btn-pink">✨ Launch Thai Poem Generator</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Load More Button -->
+    <div class="text-center my-5">
+      <button class="btn btn-primary px-4 py-2 rounded-pill shadow-sm btn-pink">
+        <a href="projects.html">🌷 Load more projects</a>
+      </button>
+    </div>
 
     <!-- Footer -->
-    <footer class="bg-light text-center py-4 mt-5">
+    <footer class="bg-light text-center py-4 mt-auto">
       <p class="mb-0">
-        © <span id="year"></span> Jirapat Wonganan. All rights reserved.
+        © <span id="year"></span> Jirapat Wonganan. All Rights Reserved.
       </p>
     </footer>
 

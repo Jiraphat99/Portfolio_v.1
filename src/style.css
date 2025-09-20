@@ -4,6 +4,11 @@
   border: none !important;
 }
 
+.btn-pink a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
 .btn-pink:hover,
 .btn-pink:focus {
   background-color: #ff1493 !important;

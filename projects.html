@@ -49,7 +49,7 @@
     <link rel="icon" href="/images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg bg-white shadow-sm sticky-top"
@@ -97,7 +97,6 @@
       </div>
     </nav>
 
-    <!-- Projects Section -->
     <main class="container py-5">
       <header class="text-center mb-5">
         <h1 class="fw-bold">⭐ My Projects</h1>
@@ -107,92 +106,93 @@
         </p>
       </header>
 
-      <div class="row g-4">
-        <!-- Project Card 1 -->
-        <article class="col-sm-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <img
-              src="/images/weather.png"
-              class="card-img-top img-fluid"
-              alt="Preview of Weather App project built with HTML, CSS, and Bootstrap"
-              loading="lazy"
-            />
-            <div class="card-body">
-              <h2 class="h5 card-title">☀️ Weather App</h2>
-              <p class="card-text">
-                A responsive weather application built with HTML, CSS, and
-                Bootstrap, providing real-time weather updates.
-              </p>
-            </div>
-            <div class="card-footer text-center bg-white border-0 pb-3">
-              <a
-                href="#"
-                class="btn btn-pink btn-sm"
-                aria-label="View Weather App Project"
-                >View Project</a
-              >
-            </div>
+      <!-- Project 1: Weather App -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img
+            src="/images/weatherapp.png"
+            class="img-fluid rounded shadow-sm"
+            alt="Weather App preview"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-3">☀️ Weather App</h2>
+          <p>
+            A responsive weather application built with HTML, CSS, and
+            Bootstrap, providing real-time weather updates.
+          </p>
+          <div class="mt-4">
+            <a href="#" class="btn btn-pink">✨ Launch Weather App</a>
           </div>
-        </article>
+        </div>
+      </div>
 
-        <!-- Project Card 2 -->
-        <article class="col-sm-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <img
-              src="/images/yoga.png"
-              class="card-img-top img-fluid"
-              alt="Preview of Yoga Website project built with JavaScript and Bootstrap"
-              loading="lazy"
-            />
-            <div class="card-body">
-              <h2 class="h5 card-title">🧘 Yoga Website</h2>
-              <p class="card-text">
-                A dynamic front-end project using JavaScript and Bootstrap
-                components for an engaging user experience.
-              </p>
-            </div>
-            <div class="card-footer text-center bg-white border-0 pb-3">
-              <a
-                href="#"
-                class="btn btn-pink btn-sm"
-                aria-label="View Yoga Website Project"
-                >View Project</a
-              >
-            </div>
+      <!-- Project 2: Thai Poem Generator (swapped) -->
+      <div class="row align-items-center mb-5 flex-md-row-reverse">
+        <div class="col-md-6">
+          <img
+            src="/images/thai_poem_generator.png"
+            class="img-fluid rounded shadow-sm"
+            alt="Thai Poem Generator preview"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-3">📜 Thai Poem Generator</h2>
+          <p>
+            An interactive web app that generates traditional Thai poems using
+            JavaScript and modern styling.
+          </p>
+          <div class="mt-4">
+            <a href="#" class="btn btn-pink">✨ Launch Thai Poem Generator</a>
           </div>
-        </article>
+        </div>
+      </div>
 
-        <!-- Project Card 3 -->
-        <article class="col-sm-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <img
-              src="/images/yogurt.png"
-              class="card-img-top img-fluid"
-              alt="Preview of Yogurt Landing Page project with animations"
-              loading="lazy"
-            />
-            <div class="card-body">
-              <h2 class="h5 card-title">🍦 Yogurt Landing Page</h2>
-              <p class="card-text">
-                A creative landing page with interactive elements, smooth
-                animations, and modern responsive design.
-              </p>
-            </div>
-            <div class="card-footer text-center bg-white border-0 pb-3">
-              <a
-                href="#"
-                class="btn btn-pink btn-sm"
-                aria-label="View Yogurt Landing Page Project"
-                >View Project</a
-              >
-            </div>
+      <!-- Project 3: World Clock App -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img
+            src="/images/worldclock.png"
+            class="img-fluid rounded shadow-sm"
+            alt="World Clock App preview"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-3">🌍 World Clock App</h2>
+          <p>
+            A world clock application that displays current times across
+            multiple cities, built with JavaScript and Bootstrap.
+          </p>
+          <div class="mt-4">
+            <a href="#" class="btn btn-pink">✨ Launch World Clock App</a>
           </div>
-        </article>
+        </div>
+      </div>
+
+      <!-- Project 4: Business AI Generator (swapped) -->
+      <div class="row align-items-center mb-5 flex-md-row-reverse">
+        <div class="col-md-6">
+          <img
+            src="/images/business_ai_generator.png"
+            class="img-fluid rounded shadow-sm"
+            alt="Business AI Generator preview"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-3">🤖 Business AI Generator</h2>
+          <p>
+            A modern web tool that generates AI-powered business ideas and
+            taglines, featuring interactive UI and responsive design.
+          </p>
+          <div class="mt-4">
+            <a href="#" class="btn btn-pink">✨ Launch Business AI Generator</a>
+          </div>
+        </div>
       </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-light text-center py-4 mt-5">
+    <footer class="bg-light text-center py-4 mt-auto">
       <p class="mb-0">
         © <span id="year"></span> Jirapat Wonganan. All Rights Reserved.
       </p>
